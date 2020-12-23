@@ -1,0 +1,80 @@
+@font-face{
+    src: url("../fonts/TaxiDriver.ttf");
+    font-family: 'Taxi Driver';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* não foi explicado*/
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #2574a9;
+    z-index: 1;
+}
+.container{
+    max-width: 1200px;
+    height: 100px;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+}
+.logo {
+    grid-area: lgo;
+}
+.logo img {
+    width: 320px;
+}
+.navbar {
+    font-size: 19px;
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+}
+.navbar a{
+    font-size: 1em;
+    font-family: 'Taxi Driver';
+}
+.navbar ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    color: #C5EFF7;
+    text-transform: uppercase;
+}
+.ghost {
+    width: 100%;
+    height: 100px;
+    background-color:#2574a9;
+}
+main {
+    font-size: 20px;
+}
+main section {
+    display: grid;
+    justify-content: center; /* horizontal */
+    align-content: center; /* vertical */
+    font-family: 'Taxi Driver';
+    font-size: 2em;
+    color: #2574a9;
+}
+/* O nth trata como um array. O 1 pega o primeiro elemento */
+main section:nth-child(odd) {
+    height: 100vh; /*viewport height que tratará a altura para cada dispositivo*/
+    background-color: #cae1f1;
+}
+/* O nth trata como um array. O 1 pega o primeiro elemento */
+main section:nth-child(even) {
+    height: 100vh; /*viewport height que tratrá a altura para cada dispositivo*/
+    background-color: #b7d5eb;
+}
