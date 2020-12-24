@@ -16,12 +16,19 @@ a {
 header {
     position: fixed;
     width: 100%;
-    background-color: #2574a9;
     z-index: 1;
+}
+.max-header {
+    background-color: #2574a9;
+    height: 100px;
+}
+.min-header {
+    background-color: #c5eff7;
+    height: 80px;
 }
 .container{
     max-width: 1200px;
-    height: 100px;
+    height: 100%;
     align-content: center;
     margin: 0 auto;
     padding: 0 60px;
@@ -55,7 +62,8 @@ header {
 .ghost {
     width: 100%;
     height: 100px;
-    background-color:#2574a9;
+    /* background-color:#2574a9; */
+    background-color: red;
 }
 main {
     font-size: 20px;
