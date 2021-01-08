@@ -47,3 +47,23 @@ header {
     font-size: 1em;
     color: #f8efba;
 }
+main {
+    font-size: 20px;
+}
+main section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Rancho', cursive;
+    font-size: 2em;
+    color: #6ab04c;
+
+}
+main section:nth-child(odd) {
+    height: 100vh; /*Para a section ficar do tamanho da tela*/
+    background-color: #f0f0d6;
+}
+main section:nth-child(even) {
+    height: 100vh; /*Para a section ficar do tamanho da tela*/
+    background-color: #f8efba;
+}
