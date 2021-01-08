@@ -2,7 +2,7 @@
 
 ## Capitulos
 
-### Inseridno transctions
+### Inserindo transctions
 
 * Primeiro passo entender no css as propriedades que estão sendo modificadas. 
 * Criando as transições
