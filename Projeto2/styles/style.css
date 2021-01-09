@@ -10,6 +10,7 @@ a {
     text-decoration: none;
 }
 header {
+    position: relative; /*usado com o position absolute da class abs-pos*/
     font-size: 20px;
 }
 .logo {
@@ -46,6 +47,21 @@ header {
     font-family: 'Rancho', cursive;
     font-size: 1em;
     color: #f8efba;
+}
+.abs-pos{
+    position: absolute; /*Fixo em relação ao outro elemento*/
+    top: 160; /*height da div logo. empurra para baixo o nav-bar em 160 px*/
+    right: 0;
+}
+.fix-pos{
+    position: fixed; /*fixo em relação ao browserou viewport (tela)*/
+    top: 0;
+    right: 0;
+}
+.ghost{
+    width: 100%;
+    height: 40px; /*mesmo height do nav-bar*/
+    background-color: #f0f0d6;
 }
 main {
     font-size: 20px;
